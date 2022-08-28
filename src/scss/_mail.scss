@@ -1,0 +1,11 @@
+.mail__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: $secondaryColor;
+  @media (max-width: $breakpoint850) {
+    font-size: calc(18px - 20%);
+    line-height: calc(26px - 20%);
+  }
+}

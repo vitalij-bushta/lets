@@ -1,0 +1,113 @@
+// Footer
+.footer {
+  padding-top: 30px;
+  display: block;
+  @media (max-width: $breakpoint850) {
+    padding-top: 0;
+  }
+  &__menu {
+    display: flex;
+    @media (max-width: $breakpoint850) {
+      justify-content: space-evenly;
+      margin-top: 20px;
+    }
+    @media (max-width: $breakpoint480) {
+      margin-top: 20px;
+      display: block;
+    }
+  }
+  &__item {
+    margin-left: 25px;
+  }
+
+  &__item-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $mainColor;
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    @media (max-width: $breakpoint850) {
+      display: block;
+    }
+    gap: 10px;
+  }
+  &__links {
+    display: flex;
+    gap: 15px;
+    @media (max-width: $breakpoint850) {
+      justify-content: center;
+    }
+    @media (max-width: 479px) {
+      justify-content: space-between;
+    }
+  }
+  &__link {
+    color: #545454;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    @media (max-width: $breakpoint850) {
+      text-align: center;
+    }
+    @media (max-width: $breakpoint635) {
+      line-height: calc(24px - 50%);
+      font-size: calc(16px - 20%);
+    }
+    @media (max-width: 479px) {
+      text-align: left;
+    }
+
+    a {
+      color: #545454;
+    }
+    span {
+      margin-left: 15px;
+      @media (max-width: 1153px) {
+        display: none;
+      }
+      margin-left: 15px;
+      @media (max-width: $breakpoint850) {
+        display: inline-block;
+      }
+      @media (max-width: 479px) {
+        display: none;
+      }
+    }
+    .--blue {
+      color: $secondaryColor;
+    }
+  }
+  &__copyright {
+    padding: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #333333;
+    text-align: center;
+  }
+  &__navbar {
+    @media (max-width: $breakpoint850) {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+hr {
+  border: 1px solid #ced7e2;
+  margin: 25px 0;
+  @media (max-width: $breakpoint850) {
+    justify-content: space-evenly;
+    margin-top: 0;
+  }
+}

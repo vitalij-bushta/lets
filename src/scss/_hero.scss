@@ -1,0 +1,102 @@
+.hero {
+  background-color: #f2f7fd;
+  padding: 67px 0 65px;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $breakpoint635) {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+  }
+  &__content {
+    display: flex;
+    flex: 0 1 54%;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: $breakpoint635) {
+      padding-bottom: 20px              ;
+      flex: 0 1 100%;
+      text-align: center;
+      }
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: $mainColor;
+    @media (max-width: $breakpoint1090) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    @media (max-width: $breakpoint850) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 55px;
+    color: $mainColor;
+    padding: 0;
+    margin: 0;
+    @media (max-width: $breakpoint1090) {
+      font-size: 33px;
+      line-height: 50px;
+      
+    }
+    @media (max-width: $breakpoint850) {
+      font-size: 23px;
+      line-height: 30px;
+    }
+    @media (max-width: $breakpoint480) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $mainColor;
+    margin-top: 21px;
+    margin-bottom: 31px;
+    max-width: 530px;
+    @media (max-width: $breakpoint850) {
+      font-size: 14px;
+    line-height: 18px;
+    }
+    @media (max-width: $breakpoint635) {
+      max-width: 100%;
+      }
+      @media (max-width: $breakpoint480) {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 5px;
+    margin-bottom: 8px;
+      }
+  }
+  &__img {
+    display: flex;
+    flex: 0 1 44%;
+    justify-content: flex-end;
+    @media (max-width: $breakpoint850) {
+      img{
+        max-width: 80%;
+      }
+    }
+    
+  }
+  @media (max-width: $breakpoint850) {
+    padding: 20px 0;
+  }
+}

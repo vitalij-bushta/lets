@@ -1,0 +1,51 @@
+.why {
+  padding: 50px 0 60px;
+  &__block {
+    display: flex;
+    @media (max-width: $breakpoint850) {
+      display: block;
+    }
+  }
+  &__items,
+  &__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $secondaryColor;
+    margin: 17px 0 7px;
+    @media (max-width: $breakpoint635) {
+      line-height: calc(24px - 50%);
+      font-size: calc(18px - 20%);
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $mainColor;
+    text-align: justify;
+    @media (max-width: $breakpoint635) {
+      line-height: calc(24px - 50%);
+      font-size: calc(16px - 20%);
+    }
+  }
+  &__images {
+    @media (max-width: $breakpoint850) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+  &__img {
+    @media (max-width: $breakpoint850) {
+      max-width: 50%;
+    }
+  }
+}

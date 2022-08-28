@@ -1,0 +1,39 @@
+.tools {
+  padding-top: 58px;
+  padding-bottom: 44px;
+  &__items {
+    padding: 36px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media (max-width: $breakpoint480) {
+        gap: 20px;
+      }
+  }
+  &__item {
+    background: #eef1f4;
+    border-radius: 20px;
+    padding: 33px 61px 77px 27px;
+    flex: 1 1 48%;
+
+    @media (max-width: $breakpoint1090) {
+      padding: 33px 44px 33px 27px;
+    }
+    
+    @media (max-width: $breakpoint480) {
+      padding: 10px;
+    }
+  }
+  &__description {
+    line-height: 24px;
+    color: $mainColor;
+    @media (max-width: $breakpoint635) {
+      line-height: calc(24px - 50%);
+      }
+  }
+  &__icon {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 18px;
+  }
+}

@@ -1,0 +1,28 @@
+.example {
+  &__wrapper{
+    background-color: #F2F7FD;
+    padding-top: 80px;
+  }
+  &__wrapper--white{
+    background: #fff;
+  }
+  
+  &__row {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    @media (max-width: $breakpoint850) {
+      display: block;
+      text-align: center;
+      span {
+        svg {
+          transform: rotate(90deg);
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  &__img {
+    max-width: 100%;
+  }
+}
